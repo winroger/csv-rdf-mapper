@@ -1,0 +1,67 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix aps: <https://w3id.org/nfdi4ing/profiles/> .
+
+<https://w3id.org/nfdi4ing/profiles/4888d2cf-04b4-43b5-bb7d-2cad7c7754b8/> 
+    dcterms:created "2023-09-29"^^xsd:date ;
+	dcterms:creator "Roger Winkler" ;
+	dcterms:description "Core Building Profile"@en ;
+	dcterms:license "https://spdx.org/licenses/CC-BY-4.0.html" ;
+	dcterms:title "Building" ;
+	a rdfs:Class, sh:NodeShape ;
+	owl:imports <https://w3id.org/nfdi4ing/profiles/385dbd12-c082-4635-bec2-4e92e5b2f741/> ;
+	sh:closed false ;
+	sh:property [
+		sh:datatype xsd:int ;
+		sh:name "ProjectID"@de, "ProjectID"@en ;
+		sh:order 1 ;
+		sh:path org:identifier ;
+	], [
+		sh:datatype xsd:string ;
+		sh:name "ProjectName"@de, "ProjectName"@en ;
+		sh:order 2 ;
+		sh:path foaf:name ;
+	], [
+		sh:datatype xsd:string ;
+		sh:name "YearBuilt"@de, "YearBuilt"@en ;
+		sh:order 3 ;
+		sh:path schema:yearBuilt ;
+	], [
+		sh:name "has Stakeholder"@de, "has Stakeholder"@en ;
+		sh:order 4 ;
+		sh:minCount 1 ;
+		sh:path <https://w3id.org/i40/sto#hasStakeholder> ;
+		sh:node <https://w3id.org/nfdi4ing/profiles/385dbd12-c082-4635-bec2-4e92e5b2f741/> ;
+	] .
+
+<https://w3id.org/nfdi4ing/profiles/385dbd12-c082-4635-bec2-4e92e5b2f741/> 
+    dcterms:created "2023-09-29"^^xsd:date ;
+	dcterms:creator "Roger Winkler" ;
+	dcterms:description "Stakeholder involved in the planning or construction of a building"@en ;
+	dcterms:license "https://spdx.org/licenses/CC-BY-4.0.html" ;
+	dcterms:title "Stakeholder"@en ;
+	a rdfs:Class, sh:NodeShape ;
+	sh:closed false ;
+	sh:property [
+		sh:datatype xsd:int ;
+		sh:name "StakeholderID"@de, "StakeholderID"@en ;
+		sh:order 1 ;
+		sh:path org:identifier ;
+	], [
+		sh:datatype xsd:string ;
+		sh:name "StakeholderName"@de, "StakeholderName"@en ;
+		sh:order 2 ;
+		sh:path foaf:name ;
+	], [
+		sh:datatype xsd:string ;
+		sh:name "StakeholderProfession"@de, "StakeholderProfession"@en ;
+		sh:order 3 ;
+		sh:path <http://www.w3id.org/ecsel-dr-ORG#has_role> ;
+	] .

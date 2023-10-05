@@ -1,0 +1,92 @@
+<!-- templates/map_properties.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Properties to CSV Columns</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        console.log("Document is ready");
+
+
+        $(document).on('change', '.csv-file-dropdown', function(){
+            console.log("Change event triggered");
+            var selected_file = $(this).val();
+            console.log("Selected file: ", selected_file);
+            var target_column_dropdown = $(this).closest('tr').find('.csv-column-dropdown');
+            console.log("Target column dropdown: ", target_column_dropdown);
+
+            var selected_file = $(this).val();
+
+            var target_column_dropdown = $(this).closest('tr').find('.csv-column-dropdown');
+
+            // Clear the column dropdown
+            target_column_dropdown.empty();
+
+            // Add the columns for the selected file
+            var columns = csv_headers[selected_file];
+            $.each(columns, function(index, column){
+                target_column_dropdown.append($("<option></option>").attr("value", index).text(column));
+            });
+        });
+        $(".csv-file-dropdown").trigger("change");
+    });
+    var csv_headers = {
+            {% for filename, headers in csv_headers.items() %}
+                "{{ filename }}": {{ headers | tojson }},
+            {% endfor %}
+            };
+
+    console.log(csv_headers);
+    </script>
+</head>
+<body>
+    <h1>Map Properties to CSV Columns</h1>
+
+    <form method="POST" action="/download_rdf">
+        <table>
+            <tr>
+                <th>RDF Subject</th>
+                <th>RDF Predicate</th>
+                <th>CSV File</th>
+                <th>CSV Column</th>
+                <th>Node Link</th>
+            </tr>
+            {% for shacl_shape in shacl_shapes %}
+                {% for prop in shacl_shape.properties %}
+                    <tr>
+                        <td>{{ shacl_shape.target_class }}</td>
+                        <td>{{ prop.name }} ({{ prop.path }})</td>
+                        <td>
+                            <select name="[{{ shacl_shape.target_class }}_{{ prop.path }}][file]" class="csv-file-dropdown" id="csv_file_{{ loop.index }}">
+                                {% for csv_file in csv_files %}
+                                    <option value="{{ csv_file.filename }}">{{ csv_file.filename }}</option>
+                                {% endfor %}
+                            </select>
+
+                        </td>
+                        <td>
+                            <select name="[{{ shacl_shape.target_class }}_{{ prop.path }}][column]" class="csv-column-dropdown" id="csv_column_{{ loop.index }}">
+                                <!-- Columns are populated dynamically based on the selected CSV file. -->
+                            </select>
+                        </td>
+                        {% if prop.node != None %}
+                        <td>
+                            <select name="[{{ shacl_shape.target_class }}_{{ prop.path }}][target_class]" class="target-class-dropdown" id="target_class_{{ loop.index }}">
+                                {% for shacl_shape in shacl_shapes %}
+                                        <option value="{{ shacl_shape.target_class }}">{{ shacl_shape.target_class }}</option>
+                                {% endfor %}
+                                </select>
+                        </td>
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+            {% endfor %}
+        </table>
+        <button type="submit">Generate and Download RDF</button>
+    </form>
+</body>
+</html>
