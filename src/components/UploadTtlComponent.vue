@@ -44,24 +44,25 @@ export default {
       this.$emit('file-uploaded', this.files);
     },
     processTestTtl() {
-      const testFilePath = "/csv-rdf-vue/example/shapegraph.ttl"
+    const testFilePath = `${process.env.BASE_URL}example/shapegraph.ttl`;
 
-      fetch(testFilePath)
+    fetch(testFilePath)
         .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.blob();
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.blob();
         })
         .then(blob => {
-          const file = new File([blob], 'shapegraph.ttl');
-          this.files = [file];
-          this.$emit('file-uploaded', this.files);
+            const file = new File([blob], 'shapegraph.ttl');
+            this.files = [file];
+            this.$emit('file-uploaded', this.files);
         })
         .catch(error => {
-          console.error('There was a problem with the fetch operation:', error);
+            console.error('There was a problem with the fetch operation:', error);
         });
-    }
+}
+
   }
 }
 </script>
