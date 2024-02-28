@@ -46,7 +46,6 @@ export default {
     processTestTtl() {
       const testFilePath = "/csv-rdf-vue/example/shapegraph.ttl"
 
-
       fetch(testFilePath)
         .then(response => {
           if (!response.ok) {
