@@ -24,7 +24,7 @@ export default {
       const fileInput = this.$refs.fileInput;
       const file = fileInput.files[0];
       if (file) {
-        this.uploadedFiles.push(file);  // Add file to uploadedFiles array
+        this.uploadedFiles.push(file);
         this.uploadTtl();
       }
     },
@@ -34,7 +34,6 @@ export default {
         formData.append('file', file);
         try {
           const response = await axios.post('http://127.0.0.1:5000/upload-ttl', formData);
-          console.log(response.data);
           this.$emit('file-uploaded', response.data);
         } catch (error) {
           console.error('File upload failed:', error);

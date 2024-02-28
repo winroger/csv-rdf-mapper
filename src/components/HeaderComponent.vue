@@ -14,9 +14,9 @@
   
   <style scoped>
   .header {
-        display: block;
-        width: 100%;
-        text-align: center;
+      display: block;
+      width: 100%;
+      text-align: center;
       color: #FFF;
       background-color: var(--brand-color);
       padding: 10px 6px;

@@ -1,7 +1,7 @@
 <template>
   <div class="upload-field">
     <h4>Upload CSV</h4>
-    <input type="file" ref="fileInput" class="file-input" multiple @change="handleFileSelect" />
+    <input type="file" ref="fileInput" class="file-input" multiple @change="handleCsvSelect" />
     Files:
     <ul class="uploaded-files">
       <li v-if="uploadedFiles.length === 0" value="" disabled selected>No Files Uploaded</li>
@@ -20,11 +20,11 @@ export default {
     };
   },
   methods: {
-    handleFileSelect() {
+    handleCsvSelect() {
       const fileInput = this.$refs.fileInput;
       for (let i = 0; i < fileInput.files.length; i++) {
         const file = fileInput.files[i];
-        this.uploadedFiles.push(file);  // Add files to uploadedFiles array
+        this.uploadedFiles.push(file);
       }
       this.uploadCsv();
     },
@@ -35,7 +35,6 @@ export default {
       }
       try {
         const response = await axios.post('http://127.0.0.1:5000/upload-csv', formData);
-        console.log(response.data);
         this.$emit('file-uploaded', response.data);
       } catch (error) {
         console.error('File upload failed:', error);

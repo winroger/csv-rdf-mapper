@@ -1,6 +1,6 @@
 <template>
     <div class="content">
-        <h3>Upload SHACL shapes and CSV Files</h3>
+        <h3>1. Upload SHACL shapes and CSV Files</h3>
         <div class="upload-container">
             <upload-ttl-form @file-uploaded="handleTtlUploaded"></upload-ttl-form>
             <upload-csv-form @file-uploaded="handleCsvUploaded"></upload-csv-form>
@@ -8,14 +8,13 @@
       <form-generator 
         :ttlInput="ttlInput" 
         :csvInput="csvInput"
-        @generate-ttl="generateTTL"
+        @generate-ttl="handleTtlGeneration"
       ></form-generator>
-      <ttl-output :rdfGraph="rdfGraph" class="content"></ttl-output>
+      <ttl-output :mappingData="mappingData" class="content"></ttl-output>
     </div>
   </template>
   
   <script>
-  import axios from 'axios';
   import FormGenerator from '@/components/FormGenerator.vue';
   import UploadTtlComponent from '@/components/UploadTtlComponent.vue';
   import UploadCsvComponent from '@/components/UploadCsvComponent.vue';
@@ -33,7 +32,7 @@
       return {
         ttlInput: {"Example Shape 1": {"Example Property": "Example Value"}},
         csvInput: {"Example CSV": {headers: ["Example Column"]}},
-        rdfGraph: '',
+        mappingData: {},
       };
     },
     methods: {
@@ -43,14 +42,9 @@
       handleCsvUploaded(csvData) {
         this.csvInput = csvData;
       },
-      async generateTTL(dataToSend) {
-        try {
-          const response = await axios.post('http://127.0.0.1:5000/generate-ttl', dataToSend);
-          this.rdfGraph = response.data;
-        } catch (error) {
-          console.error('There was an error sending the data:', error);
-        }
-      },
+      handleTtlGeneration(mappingData) {
+        this.mappingData = mappingData;
+      }
     },
   };
   </script>
