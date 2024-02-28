@@ -24,24 +24,6 @@
       <div class="column is-half">
         <p class="code has-text-weight-medium"> {{ dataInput.getFileCount() }} files uploaded</p>
           <li v-for="(value, key) in dataInput.data" :key="key">{{ key }}</li>
-        <!--
-        <table v-if="dataInput.getFileCount() !== 0" class="table is-fullwidth has-text-weight-normal">
-          <thead>
-            <tr>
-              <th>No.</th>
-              <th>Name</th>
-              <th>Columns</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="(value, key, index) in dataInput.data" :key="index">
-              <td>{{ index }}</td>
-              <td>{{ key }}</td>
-              <td>{{ value.getDataHeaders() }}</td>
-            </tr>
-          </tbody>
-        </table>
-        -->
       </div>
       </div>
     </div>
