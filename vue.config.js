@@ -1,5 +1,5 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
-  publicPath: '/csv-rdf-vue/',
+  publicPath: '/csv-rdf-mapper/',
   transpileDependencies: true,
 })
