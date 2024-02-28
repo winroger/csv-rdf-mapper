@@ -44,7 +44,9 @@ export default {
       this.$emit('file-uploaded', this.files);
     },
     processTestTtl() {
-      const testFilePath = '/csv-rdf-vue/example/shapegraph.ttl';
+      const testFilePath = "/csv-rdf-vue/example/shapegraph.ttl"
+
+
       fetch(testFilePath)
         .then(response => {
           if (!response.ok) {

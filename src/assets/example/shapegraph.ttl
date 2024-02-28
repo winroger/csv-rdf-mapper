@@ -1,0 +1,78 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix aps: <https://w3id.org/nfdi4ing/profiles/> .
+@prefix example: <http://example.org/> .
+@prefix geo:     <http://www.opengis.net/ont/geosparql#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+
+
+
+<https://w3id.org/nfdi4ing/profiles/4888d2cf-04b4-43b5-bb7d-2cad7c7754b8/> 
+    dcterms:created "2023-09-29"^^xsd:date ;
+	dcterms:creator "Roger Winkler" ;
+	dcterms:description "Application profile to describe a building"@en ;
+	dcterms:license "https://spdx.org/licenses/CC-BY-4.0.html" ;
+	dcterms:title "Building" ;
+	a rdfs:Class, sh:NodeShape ;
+	owl:imports <https://w3id.org/nfdi4ing/profiles/385dbd12-c082-4635-bec2-4e92e5b2f741/> ;
+	sh:closed false ;
+	sh:property [
+		sh:datatype xsd:int ;
+		sh:name "ProjectID"@de, "ProjectID"@en ;
+		dcterms:description "Research identifier of the building"@en ;
+		sh:path	org:identifier;
+	], [
+		sh:datatype xsd:string ;
+		sh:name "ProjektName"@de, "ProjectName"@en ;
+		dcterms:description "Given official name of the building"@en ;
+		sh:path foaf:name ;
+	], [
+		sh:datatype xsd:int ;
+		sh:name "Baujahr"@de, "YearBuilt"@en ;
+		dcterms:description "Planned or realized date for the construction of the building"@en ;
+		sh:path schema:yearBuilt ;
+	], [
+        sh:datatype     geo:wktLiteral ;
+        sh:description  "Format WKT, e.g. POINT(8.65 49.87)" ;
+        sh:name         "Koordinaten"@de, "Coordinates"@en ;
+        sh:path         geo:asWKT ;
+        sh:pattern      "^POINT\\([+\\-]?(?:[0-9]*[.])?[0-9]+ [+\\-]?(?:[0-9]*[.])?[0-9]+\\)|POLYGON\\(\\((?:[+\\-]?(?:[0-9]*[.])?[0-9]+[ ,]?){3,}\\)\\)$"
+	], [
+		sh:name "Projektbeteiligte"@de, "Stakeholders"@en ;
+		sh:description  "Architects, Engineers and Fabricators involved in the planning and construction of the building" ;
+		sh:path <https://w3id.org/i40/sto#hasStakeholder> ;
+		sh:node <https://w3id.org/nfdi4ing/profiles/385dbd12-c082-4635-bec2-4e92e5b2f741/> ;
+	] .
+
+<https://w3id.org/nfdi4ing/profiles/385dbd12-c082-4635-bec2-4e92e5b2f741/> 
+    dcterms:created "2023-09-29"^^xsd:date ;
+	dcterms:creator "Roger Winkler" ;
+	dcterms:description "Application Profile to describe a stakeholder involved in the planning or construction of a building"@en ;
+	dcterms:license "https://spdx.org/licenses/CC-BY-4.0.html" ;
+	dcterms:title "Stakeholder"@en ;
+	a rdfs:Class, sh:NodeShape ;
+	sh:closed false ;
+	sh:property [
+		sh:datatype xsd:int ;
+		sh:name "ProjektbeteiligteID"@de, "StakeholderID"@en ;
+		dcterms:description "Research identifier for the Stakeholder involved in the planning or construction of a building"@en ;
+
+		sh:path org:identifier ;
+	], [
+		sh:datatype xsd:string ;
+		sh:name "ProjektbeteiligteName"@de, "StakeholderName"@en ;
+		dcterms:description "Official Name of the Stakeholder involved in the planning or construction of a building"@en ;
+		sh:path foaf:name ;
+	], [
+		sh:class example:role ;
+		sh:name "StakeholderProfession"@de, "StakeholderProfession"@en ;
+		dcterms:description "Profession of the Stakeholder involved in the planning or construction of a building"@en ;
+		sh:path <http://www.w3id.org/ecsel-dr-ORG#has_role>;
+	] .
