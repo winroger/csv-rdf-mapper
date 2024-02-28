@@ -1,10 +1,12 @@
 <template>
-    <div class="header">
-      <h1>
-        <slot></slot>
-      </h1>
-    </div>
-  </template>
+  <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="">
+            <strong class="">CSV-RDF-Mapper</strong>
+          </a>
+        </div>
+      </nav>
+</template>
   
   <script>
   export default {
@@ -13,18 +15,5 @@
   </script>
   
   <style scoped>
-  .header {
-      display: block;
-      width: 100%;
-      text-align: center;
-      color: #FFF;
-      background-color: var(--brand-color);
-      padding: 10px 6px;
-  }
-  
-  .header h1 {
-      margin: 0;
-      font-size: 20px;
-  }
   </style>
   

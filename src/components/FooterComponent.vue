@@ -1,0 +1,12 @@
+<template>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+            <strong>CSV-RDF-Mapper</strong> by <a href="https://www.ulb.tu-darmstadt.de/">ULB Darmstadt</a>. 
+            The <a href=""><i class="fab fa-github"></i> source code </a> is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+            </p>
+        </div>
+    </footer>
+</template>
