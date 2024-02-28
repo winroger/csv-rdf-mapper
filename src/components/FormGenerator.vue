@@ -1,7 +1,7 @@
 <template>
   <div>
     <h4 class="title is-4">Step 3: Match Shapegraph with Tables</h4>
-      <div v-for="(shape, index) in ApplicationProfile.getNodeShapes()" :key="shape.nodeId.value" class="content">
+      <div v-for="(shape, index) in ApplicationProfile.getNodeShapes()" :key="shape.nodeId.value" class="content box">
         <div class="columns">
         <div class="column is-half">
           <legend><h5 class="title is-5">{{ index +1 }}. {{ shape.label.value }}</h5><p class="is-italic">{{ shape.nodeId.value }}</p></legend>
