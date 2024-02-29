@@ -5,7 +5,7 @@
   </p>
 
   <button class="button is-info content" @click="generateRDF()">Create Datagraph</button>
-    <div v-if="rdfGraphGenerated" class="container">
+    <div v-if="rdfGraphGenerated" class="">
       <div class="content">
         <button class="copy-btn" @click="copyToClipboard()">{{ copyButtonText }}</button>
         <pre is-family-code>{{ rdfGraph }}</pre>
