@@ -6,7 +6,7 @@
         </div>
         <div class="columns">
           <div class="column is-half">
-          <div class="file is-info content">
+          <div class="file is-dark content">
             <label for="fileInput" class="file-label">
               <input type="file" id="fileInput" class="file-input" ref="fileInput" @change="processTtl"/>
               <span class="file-cta">
@@ -17,7 +17,7 @@
             </label>
           </div>
         <div class="file">
-          <div class="button file-cta is-info is-light" @click="processTestTtl()">Load example shapegraph</div>
+          <div class="button file-cta is-light" @click="processTestTtl()">Load example shapegraph</div>
         </div>
       </div>
         <div class="column is-half">

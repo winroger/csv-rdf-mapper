@@ -6,18 +6,18 @@
         </div>
         <div class="columns">
           <div class="column is-half">
-          <div class="file is-info content">
+          <div class="file is-dark content">
           <label for="fileInput" class="file-label">
             <input type="file" id="fileInput" class="file-input" ref="fileInput" multiple name="resume" @change="createCsvInput"/>
             <span class="file-cta">
               <span class="file-label">
-                Upload CSV-file
+                 Upload CSV-file
               </span>
             </span>
           </label>
         </div>
         <div class="file">
-        <button class="button file-cta is-info is-light" @click="processTestCsv">Load example tables</button>
+        <button class="button file-cta is-light" @click="processTestCsv">Load example tables</button>
       </div>
 
   </div> 
