@@ -7,7 +7,7 @@
           <legend><h5 class="title is-5">{{ index +1 }}. {{ shape.label.value }}</h5><p class="is-italic">{{ shape.nodeId.value }}</p></legend>
         </div>
         <div class="column is-half">
-          <div class="select is-info">
+          <div class="select is-dark">
             <select @change="handleCsvSelection($event, shape)">
               <option v-if="mapping[shape.nodeId.value]?.[0]?.dataFile" :value="mapping[shape.nodeId.value][0].dataFile" selected>
                 {{ mapping[shape.nodeId.value][0].dataFile }}

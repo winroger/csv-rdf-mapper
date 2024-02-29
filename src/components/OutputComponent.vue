@@ -4,7 +4,7 @@
     generate your RDF-Graph by clicking the button below.
   </p>
 
-  <button class="button is-info content" @click="generateRDF()">Create Datagraph</button>
+  <button class="button is-dark content" @click="generateRDF()">Create Datagraph</button>
     <div v-if="rdfGraphGenerated" class="">
       <div class="content">
         <button class="copy-btn" @click="copyToClipboard()">{{ copyButtonText }}</button>
