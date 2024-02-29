@@ -1,0 +1,258 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix org: <http://www.w3.org/ns/org#>.
+@prefix schema: <http://schema.org/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix n0: <https://w3id.org/nfdi4ing/profiles/385dbd12-c082-4635-bec2-4e92e5b2f741/>.
+@prefix ecs: <http://www.w3id.org/ecsel-dr-ORG#>.
+@prefix n1: <https://w3id.org/nfdi4ing/profiles/4888d2cf-04b4-43b5-bb7d-2cad7c7754b8/>.
+@prefix geosp: <http://www.opengis.net/ont/geosparql#>.
+@prefix sto: <https://w3id.org/i40/sto#>.
+
+n0:108
+    a n0:;
+    org:identifier "108"^^xsd:int;
+    ecs:has_role "Engineer";
+    foaf:name "Borlini & Zanani SA".
+n0:114
+    a n0:;
+    org:identifier "114"^^xsd:int;
+    ecs:has_role "Architect";
+    foaf:name "Brendeland & Kristoffersen Arkitekter".
+n0:171
+    a n0:;
+    org:identifier "171"^^xsd:int;
+    ecs:has_role "Architect";
+    foaf:name "Dietrich Untertrifaller Architekten".
+n0:198
+    a n0:;
+    org:identifier "198"^^xsd:int;
+    ecs:has_role "Fabricator";
+    foaf:name "Eurban".
+n0:220
+    a n0:;
+    org:identifier "220"^^xsd:int;
+    ecs:has_role "Fabricator";
+    foaf:name "Fussenegger Holzbau GmbH".
+n0:224
+    a n0:;
+    org:identifier "224"^^xsd:int;
+    ecs:has_role "Fabricator";
+    foaf:name "Gandelli Group".
+n0:259
+    a n0:;
+    org:identifier "259"^^xsd:int;
+    ecs:has_role "Architect";
+    foaf:name "Hermann Kaufmann + Partner ZT GmbH".
+n0:276
+    a n0:;
+    org:identifier "276"^^xsd:int;
+    ecs:has_role "Architect";
+    foaf:name "Holzbox Tirol".
+n0:283
+    a n0:;
+    org:identifier "283"^^xsd:int;
+    ecs:has_role "Architect";
+    foaf:name "Hubert Riess".
+n0:287
+    a n0:;
+    org:identifier "287"^^xsd:int;
+    ecs:has_role "Fabricator";
+    foaf:name "i+R Holzbau GmbH".
+n0:315
+    a n0:;
+    org:identifier "315"^^xsd:int;
+    ecs:has_role "Architect";
+    foaf:name "Johannes Kaufmann Architektur".
+n0:318
+    a n0:;
+    org:identifier "318"^^xsd:int;
+    ecs:has_role "Engineer";
+    foaf:name "JR Consult".
+n0:33
+    a n0:;
+    org:identifier "33"^^xsd:int;
+    ecs:has_role "Engineer";
+    foaf:name "Anders Associates".
+n0:334
+    a n0:;
+    org:identifier "334"^^xsd:int;
+    ecs:has_role "Fabricator";
+    foaf:name "KLH MASSIVHOLZ GMBH".
+n0:346
+    a n0:;
+    org:identifier "346"^^xsd:int;
+    ecs:has_role "Fabricator";
+    foaf:name "Kulmer Holz-Leimbau GesmbH".
+n0:348
+    a n0:;
+    org:identifier "348"^^xsd:int;
+    ecs:has_role "Fabricator";
+    foaf:name "L I Construction".
+n0:353
+    a n0:;
+    org:identifier "353"^^xsd:int;
+    ecs:has_role "Fabricator";
+    foaf:name "Laube SA".
+n0:366
+    a n0:;
+    org:identifier "366"^^xsd:int;
+    ecs:has_role "Architect";
+    foaf:name "Lorenzo Felder Architects".
+n0:37
+    a n0:;
+    org:identifier "37"^^xsd:int;
+    ecs:has_role "Architect";
+    foaf:name "Anton H\u00f6ss".
+n0:380
+    a n0:;
+    org:identifier "380"^^xsd:int;
+    ecs:has_role "Engineer";
+    foaf:name "Makiol Wiederkehr".
+n0:398
+    a n0:;
+    org:identifier "398"^^xsd:int;
+    ecs:has_role "Engineer";
+    foaf:name "Merz Kley Partner".
+n0:430
+    a n0:;
+    org:identifier "430"^^xsd:int;
+    ecs:has_role "Engineer";
+    foaf:name "Nowy Zorn ZT GmbH".
+n0:478
+    a n0:;
+    org:identifier "478"^^xsd:int;
+    ecs:has_role "Architect";
+    foaf:name "Quay2c Architects".
+n0:490
+    a n0:;
+    org:identifier "490"^^xsd:int;
+    ecs:has_role "Fabricator";
+    foaf:name "Renggli AG".
+n0:493
+    a n0:;
+    org:identifier "493"^^xsd:int;
+    ecs:has_role "Architect";
+    foaf:name "Riepl Riepl Architekten".
+n0:510
+    a n0:;
+    org:identifier "510"^^xsd:int;
+    ecs:has_role "Fabricator";
+    foaf:name "Santner & Spehs OEG".
+n0:517
+    a n0:;
+    org:identifier "517"^^xsd:int;
+    ecs:has_role "Architect";
+    foaf:name "Scheitlin-Syfrig".
+n0:550
+    a n0:;
+    org:identifier "550"^^xsd:int;
+    ecs:has_role "Architect";
+    foaf:name "sps architekten".
+n0:554
+    a n0:;
+    org:identifier "554"^^xsd:int;
+    ecs:has_role "Fabricator";
+    foaf:name "Stjern".
+n0:555
+    a n0:;
+    org:identifier "555"^^xsd:int;
+    ecs:has_role "Fabricator";
+    foaf:name "Stora Ense".
+n0:603
+    a n0:;
+    org:identifier "603"^^xsd:int;
+    ecs:has_role "Architect";
+    foaf:name "Vandkunsten Architects".
+n0:612
+    a n0:;
+    org:identifier "612"^^xsd:int;
+    ecs:has_role "Fabricator";
+    foaf:name "Vorarlberger \u00d6kohaus GmbH".
+n0:633
+    a n0:;
+    org:identifier "633"^^xsd:int;
+    ecs:has_role "Engineer";
+    foaf:name "Woschitz Group".
+n0:650
+    a n0:;
+    org:identifier "650"^^xsd:int;
+    ecs:has_role "Engineer";
+    foaf:name "Sample Stakeholder".
+n1:1
+    a n1:;
+    schema:yearBuilt "2000"^^xsd:int;
+    geosp:asWKT "POINT(13.0001566 55.6052931)"^^geosp:wktLiteral;
+    org:identifier "1"^^xsd:int;
+    foaf:name "Tr\u00e4hus 2001";
+    sto:hasStakeholder n0:510, n0:603 .
+n1:10
+    a n1:;
+    schema:yearBuilt "2006"^^xsd:int;
+    geosp:asWKT "POINT(6.538035170357949 49.0207259)"^^geosp:wktLiteral;
+    org:identifier "10"^^xsd:int;
+    foaf:name "Wohnanlage Samer M\u00f6sl";
+    sto:hasStakeholder n0:430, n0:550 .
+n1:11
+    a n1:;
+    schema:yearBuilt "2007"^^xsd:int;
+    geosp:asWKT "POINT(8.9520281 46.0050102)"^^geosp:wktLiteral;
+    org:identifier "11"^^xsd:int;
+    foaf:name "Casa Montarina";
+    sto:hasStakeholder n0:108, n0:224, n0:353, n0:366, n0:555 .
+n1:2
+    a n1:;
+    schema:yearBuilt "2003"^^xsd:int;
+    geosp:asWKT "POINT(11.1594185 46.6695547)"^^geosp:wktLiteral;
+    org:identifier "2"^^xsd:int;
+    foaf:name "Housing Block in Merano";
+    sto:hasStakeholder n0:276, n0:287, n0:37, n0:612 .
+n1:3
+    a n1:;
+    schema:yearBuilt "2004"^^xsd:int;
+    geosp:asWKT "POINT(16.3725042 48.2083537)"^^geosp:wktLiteral;
+    org:identifier "3"^^xsd:int;
+    foaf:name "Sp\u00f6ttlgasse";
+    sto:hasStakeholder n0:283, n0:318, n0:33, n0:334, n0:346, n0:633 .
+n1:4
+    a n1:;
+    schema:yearBuilt "2005"^^xsd:int;
+    geosp:asWKT "POINT(9.7423875 47.413631)"^^geosp:wktLiteral;
+    org:identifier "4"^^xsd:int;
+    foaf:name
+        "Altenpflegeheim H\u00f6chsterstra\u00dfe (Pflegeheim Dornbirn, Dornbirn Nursing Home)";
+    sto:hasStakeholder n0:220, n0:259, n0:315, n0:493 .
+n1:5
+    a n1:;
+    schema:yearBuilt "2005"^^xsd:int;
+    geosp:asWKT "POINT(10.3951929 63.4305658)"^^geosp:wktLiteral;
+    org:identifier "5"^^xsd:int;
+    foaf:name "Svartamoen Place";
+    sto:hasStakeholder n0:114, n0:510, n0:554 .
+n1:6
+    a n1:;
+    schema:yearBuilt "2006"^^xsd:int;
+    geosp:asWKT "POINT(-0.1276474 51.5073219)"^^geosp:wktLiteral;
+    org:identifier "6"^^xsd:int;
+    foaf:name "Fairmules House";
+    sto:hasStakeholder n0:198, n0:33, n0:348, n0:478 .
+n1:7
+    a n1:;
+    schema:yearBuilt "2006"^^xsd:int;
+    geosp:asWKT "POINT(8.5539378 47.1486137)"^^geosp:wktLiteral;
+    org:identifier "7"^^xsd:int;
+    foaf:name "Holzhausen";
+    sto:hasStakeholder n0:380, n0:490, n0:517, n0:612 .
+n1:8
+    a n1:;
+    schema:yearBuilt "2006"^^xsd:int;
+    geosp:asWKT "POINT(10.3435454 50.8149812)"^^geosp:wktLiteral;
+    org:identifier "8"^^xsd:int;
+    foaf:name "WHA am M\u00fchlweg Bauteil A (Wohnanlage M\u00fchlweg)";
+    sto:hasStakeholder n0:259, n0:287, n0:398 .
+n1:9
+    a n1:;
+    schema:yearBuilt "2006"^^xsd:int;
+    geosp:asWKT "POINT(16.3725042 48.2083537)"^^geosp:wktLiteral;
+    org:identifier "9"^^xsd:int;
+    foaf:name "WHA am M\u00fchlweg Bauteil C";
+    sto:hasStakeholder n0:171 .

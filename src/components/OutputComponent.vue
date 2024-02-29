@@ -115,7 +115,7 @@ import { InputData } from '@/inputdata';
 
 <style scoped>
 .content {
-    position: relative; /* Add this line */
+    position: relative;
 }
 
 .copy-btn {
@@ -133,7 +133,7 @@ import { InputData } from '@/inputdata';
     font-size: 1rem;
     transition: all 0.2s ease-out;
 
-    position: absolute; /* Remove this line */
+    position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;

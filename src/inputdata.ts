@@ -91,7 +91,7 @@ export class CsvData implements DataSource {
             complete: (result: any) => {
               this.headers = result.data[0];
               this.content = result.data.slice(1);
-              const stakeholderIndex = this.headers.findIndex(header => header === "StakeholderIDs");
+              const stakeholderIndex = this.headers.findIndex(header => header === "StakeholderIDs"); // TO BE FIXED
               
               if (stakeholderIndex !== -1) {
                 this.content = this.content.map((row) => {

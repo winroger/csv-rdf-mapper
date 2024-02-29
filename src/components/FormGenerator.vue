@@ -129,9 +129,8 @@ export default {
       headers = this.dataInput.getHeaders(this.mapping.getMappingFile(shape.nodeId.value))
     }
     return headers;
-  },
-
-}
+    }, 
+  }
 }
 </script>
 

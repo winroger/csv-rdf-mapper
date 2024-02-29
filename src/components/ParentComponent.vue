@@ -73,8 +73,5 @@ import { InputData } from '@/inputdata';
     },
   };
   </script>
-  
-  
-  
   <style>  
   </style>
