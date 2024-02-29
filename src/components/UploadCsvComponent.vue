@@ -52,7 +52,7 @@ export default {
       this.$emit('file-uploaded', this.dataInput);
     },
     async processTestCsv() {
-      const testFilesPath = ['/csv-rdf-vue/example/buildings.csv', '/csv-rdf-vue/example/stakeholders.csv'];
+      const testFilesPath = [`${process.env.BASE_URL}example/buildings.csv`, `${process.env.BASE_URL}example/stakeholders.csv`];
 
       for (const testFilePath of testFilesPath) {
         try {
