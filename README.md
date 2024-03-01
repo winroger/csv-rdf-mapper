@@ -12,21 +12,21 @@ The tool was developed during the NFDI4Ing Seed Fund: [RDM-Workflows for constru
 
 ## Features
 
-- Conversion of `csv` data to `turtle / text` format using `SHACL` for structuring.
+- Conversion of `csv` data to `turtle / text` format using `shacl` for structuring.
 - Example datasets and shape graph provided to demonstrate functionality in the [Demo](https://winroger.github.io/csv-rdf-mapper/).
-- Written in `Vue.js` with `TypeScript`.
 
 ## Planned Features
 
-- Use `SHACL` for validation
-- Extend functionalities how Shapegraphs are imported and used, currently only supporting Nodeshapes and properties.
+- Implement [rdf-validate-shacl](https://github.com/zazuko/rdf-validate-shacl) for validation
+- Fix how nodeshapes are represented in the datagraph (see f.e. `n0:`)
+- Extend functionalities how Shapegraph are populated, currently only supporting `nodeshapes` and `nodeShapeProperties` for demonstration.
 
 ## Technologies Used
 
-- Vue.js
-- TypeScript
-- RDF (rdflib)
-- SHACL
+- Vue.js (3.3.4)
+- TypeScript (4.5.5)
+- [rdflib.js](https://www.npmjs.com/package/rdflib)
+- [papaparse](https://www.npmjs.com/package/papaparse)
 
 ## Installation
 
