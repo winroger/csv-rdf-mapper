@@ -1,6 +1,6 @@
 # CSV-RDF-Mapper
 
-Converts tabular data (`csv`) to [RDF](https://www.w3.org/RDF/) (`turtle / text`) utilizing [SHACL](https://www.w3.org/TR/shacl/). The CSV-RDF-Mapper is an MVP to showcase a workflow to populate tabular data into a data graph. Current functionalities are mainly for showcase purposes and are not complete. A minimal `shape graph` and `tabular data` is included in the examples and embedded into the [Demo](https://winroger.github.io/csv-rdf-mapper/).
+Converts tabular data (`csv`) to [turtle / text](https://www.w3.org/RDF/) utilizing [SHACL](https://www.w3.org/TR/shacl/). The CSV-RDF-Mapper is an MVP to showcase a workflow to populate tabular data into a data graph. Current functionalities are mainly for showcase purposes and are not complete. A minimal shape graph and tabular data is included in the examples and embedded into the [Demo](https://winroger.github.io/csv-rdf-mapper/).
 
 ## Demo
 
@@ -12,7 +12,7 @@ The tool was developed during the NFDI4Ing Seed Fund: [RDM-Workflows for constru
 
 ## Features
 
-- Conversion of `CSV` data to `RDF` format using `SHACL` for structuring.
+- Conversion of `csv` data to `turtle / text` format using `SHACL` for structuring.
 - Example datasets and shape graph provided to demonstrate functionality.
 - Written in `Vue.js` with `TypeScript`.
 
