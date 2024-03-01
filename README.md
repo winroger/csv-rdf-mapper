@@ -1,6 +1,6 @@
 # CSV-RDF-Mapper
 
-Converts tabular data (`csv`) to [turtle / text](https://www.w3.org/RDF/) utilizing [SHACL](https://www.w3.org/TR/shacl/). The CSV-RDF-Mapper is an MVP to showcase a workflow to populate tabular data into a data graph. Current functionalities are mainly for showcase purposes and are not complete. A minimal shape graph and tabular data is included in the examples and embedded into the [Demo](https://winroger.github.io/csv-rdf-mapper/).
+Converts tabular data (`csv`) to rdf (`turtle / text`) utilizing [SHACL](https://www.w3.org/TR/shacl/). The CSV-RDF-Mapper is an MVP to showcase a workflow to populate tabular data into a data graph. Current functionalities are mainly for showcase purposes and are not complete. A minimal shape graph and tabular data is included in the examples and embedded into the [Demo](https://winroger.github.io/csv-rdf-mapper/).
 
 ## Demo
 
@@ -13,13 +13,13 @@ The tool was developed during the NFDI4Ing Seed Fund: [RDM-Workflows for constru
 ## Features
 
 - Conversion of `csv` data to `turtle / text` format using `SHACL` for structuring.
-- Example datasets and shape graph provided to demonstrate functionality.
+- Example datasets and shape graph provided to demonstrate functionality in the [Demo](https://winroger.github.io/csv-rdf-mapper/).
 - Written in `Vue.js` with `TypeScript`.
 
 ## Planned Features
 
 - Use `SHACL` for validation
-- Extend functionalities how Shapegraphs are imported and used
+- Extend functionalities how Shapegraphs are imported and used, currently only supporting Nodeshapes and properties.
 
 ## Technologies Used
 
@@ -69,5 +69,5 @@ This project is distributed under the MIT License. See `LICENSE` for more inform
 
 ## Contact
 
-Winkler, Roger - roger.winkler@tu-darmstadt.de <br>
-Svatos-Raznjevic, Hana hana.svatos-raznjevic@icd.uni-stuttgart.de
+- Winkler, Roger - [roger.winkler@tu-darmstadt.de](mailto:roger.winkler@tu-darmstadt.de) - [University and State Library](https://www.ulb.tu-darmstadt.de/) at the Technical University of Darmstadt, [Department Information Technology, Research and Development (III)](https://www.ulb.tu-darmstadt.de/die_bibliothek/ueberuns/organisation/abteilung_iii/index.en.jsp)
+- Svatos-Raznjevic, Hana - [hana.svatos-raznjevic@icd.uni-stuttgart.de](mailto:hana.svatos-raznjevic@icd.uni-stuttgart.de) - [University of Stuttgart](https://www.uni-stuttgart.de/en/), [Institute for Computational Design and Construction](https://www.icd.uni-stuttgart.de)
