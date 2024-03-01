@@ -1,6 +1,6 @@
 # CSV-RDF-Mapper
 
-Converts tabular data (CSV) to [RDF](https://www.w3.org/RDF/) (Turtle) utilizing [SHACL](https://www.w3.org/TR/shacl/). The CSV-RDF-Mapper is an MVP to showcase a workflow to populate tabular data into a data graph. Current functionalities are mainly for showcase purposes and are not complete. A minimal shape graph and tabular data is included in the examples and embedded into the [Demo](https://winroger.github.io/csv-rdf-mapper/). The app is written as a Vue application and provides TypeScript classes for the data conversion.
+Converts tabular data (`CSV`) to [RDF](https://www.w3.org/RDF/) (`turtle / text`) utilizing [SHACL](https://www.w3.org/TR/shacl/). The CSV-RDF-Mapper is an MVP to showcase a workflow to populate tabular data into a data graph. Current functionalities are mainly for showcase purposes and are not complete. A minimal `shape graph` and `tabular data` is included in the examples and embedded into the [Demo](https://winroger.github.io/csv-rdf-mapper/).
 
 ## Demo
 
@@ -12,13 +12,13 @@ The tool was developed during the NFDI4Ing Seed Fund: [RDM-Workflows for constru
 
 ## Features
 
-- Conversion of CSV data to RDF format using SHACL for structuring.
+- Conversion of `CSV` data to `RDF` format using `SHACL` for structuring.
 - Example datasets and shape graph provided to demonstrate functionality.
-- Written in Vue.js with TypeScript.
+- Written in `Vue.js` with `TypeScript`.
 
 ## Planned Features
 
-- Use SHACL for validation
+- Use `SHACL` for validation
 - Extend functionalities how Shapegraphs are imported and used
 
 ## Technologies Used
@@ -47,9 +47,9 @@ npm run serve
 ## Building for Production
 
 To build the project for production, use:
-
+```console
 npm run build
-
+```
 
 ## TypeScript Classes
 
