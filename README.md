@@ -69,5 +69,5 @@ This project is distributed under the MIT License. See `LICENSE` for more inform
 
 ## Contact
 
-Winkler, Roger - roger.winkler@tu-darmstadt.de
+Winkler, Roger - roger.winkler@tu-darmstadt.de <br>
 Svatos-Raznjevic, Hana hana.svatos-raznjevic@icd.uni-stuttgart.de
