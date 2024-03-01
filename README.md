@@ -1,6 +1,6 @@
 # CSV-RDF-Mapper
 
-Converts tabular data (`CSV`) to [RDF](https://www.w3.org/RDF/) (`turtle / text`) utilizing [SHACL](https://www.w3.org/TR/shacl/). The CSV-RDF-Mapper is an MVP to showcase a workflow to populate tabular data into a data graph. Current functionalities are mainly for showcase purposes and are not complete. A minimal `shape graph` and `tabular data` is included in the examples and embedded into the [Demo](https://winroger.github.io/csv-rdf-mapper/).
+Converts tabular data (`csv`) to [RDF](https://www.w3.org/RDF/) (`turtle / text`) utilizing [SHACL](https://www.w3.org/TR/shacl/). The CSV-RDF-Mapper is an MVP to showcase a workflow to populate tabular data into a data graph. Current functionalities are mainly for showcase purposes and are not complete. A minimal `shape graph` and `tabular data` is included in the examples and embedded into the [Demo](https://winroger.github.io/csv-rdf-mapper/).
 
 ## Demo
 
@@ -69,6 +69,5 @@ This project is distributed under the MIT License. See `LICENSE` for more inform
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
-
-Project Link: [https://github.com/winroger/csv-rdf-mapper](https://github.com/winroger/csv-rdf-mapper)
+Winkler, Roger - roger.winkler@tu-darmstadt.de
+Svatos-Raznjevic, Hana hana.svatos-raznjevic@icd.uni-stuttgart.de
