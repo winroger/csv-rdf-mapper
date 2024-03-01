@@ -19,6 +19,7 @@ The tool was developed during the NFDI4Ing Seed Fund: [RDM-Workflows for constru
 ## Planned Features
 
 - Use SHACL for validation
+- Extend functionalities how Shapegraphs are imported and used
 
 ## Technologies Used
 
@@ -30,18 +31,18 @@ The tool was developed during the NFDI4Ing Seed Fund: [RDM-Workflows for constru
 ## Installation
 
 To install CSV-RDF-Mapper, follow these steps:
-
+```console
 git clone https://github.com/winroger/csv-rdf-mapper.git
 cd csv-rdf-mapper
 npm install
-
+```
 
 ## Running the Application
 
 To run the application locally, execute:
-
+```console
 npm run serve
-
+```
 
 ## Building for Production
 
