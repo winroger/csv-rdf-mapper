@@ -20,9 +20,7 @@
                       {{ header }}
                   </option>
               </select>
-
             </div>
-
           </td>
         </tr>
       </tbody>
@@ -53,13 +51,10 @@ import { NodeShape } from '../NodeShape';
             } else {
                 excludedHeader = null;
             }
-
             return this.headers.filter(header => header !== excludedHeader);
         };
     }
 },
-
-
     methods: {
       emitUpdate(nodeId, property, header) {
         this.$emit('update-mapping', {nodeId: nodeId, property: property, header: header.target.value});
@@ -67,6 +62,5 @@ import { NodeShape } from '../NodeShape';
     }
   };
   </script>
-  
   <style scoped>
   </style>

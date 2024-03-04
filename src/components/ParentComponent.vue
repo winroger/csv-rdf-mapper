@@ -4,11 +4,11 @@
     <div class="columns">
 
       <div class="column is-half">
-        <upload-ttl-form @file-uploaded="handleTtlUploaded"></upload-ttl-form>
+        <upload-ttl-form @ttl-uploaded="handleTtlUploaded"></upload-ttl-form>
       </div>
 
       <div class="column is-half">
-        <upload-csv-form @file-uploaded="handleDataUploaded"></upload-csv-form>
+        <upload-csv-form @csv-uploaded="handleDataUploaded"></upload-csv-form>
       </div>
 
     </div>
@@ -39,7 +39,7 @@
   import OutputComponent from '@/components/OutputComponent.vue';
   import { ApplicationProfile } from '@/NodeShape';
   import { Mapping } from '@/mapping';
-import { InputData } from '@/inputdata';
+  import { InputData } from '@/inputdata';
   
   export default {
     components: {

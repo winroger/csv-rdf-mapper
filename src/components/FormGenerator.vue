@@ -16,8 +16,6 @@
                 {{ name }}
               </option>
             </select>
-
-
           </div>
         </div>
       </div>
@@ -31,13 +29,8 @@
     </div>
 </template>
 
-      
-
-
-  
 <script>
 import ShapeTable from './ShapeTable.vue';
-
 import { ApplicationProfile } from '../NodeShape'
 import { Mapping } from '../mapping'
 import { InputData } from '@/inputdata';

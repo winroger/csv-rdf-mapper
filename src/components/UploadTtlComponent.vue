@@ -41,7 +41,7 @@ export default {
     processTtl() {
       const fileInput = this.$refs.fileInput;
       this.files = Array.from(fileInput.files);
-      this.$emit('file-uploaded', this.files);
+      this.$emit('ttl-uploaded', this.files);
     },
     processTestTtl() {
     const testFilePath = `${process.env.BASE_URL}example/shapegraph.ttl`;
@@ -56,7 +56,7 @@ export default {
         .then(blob => {
             const file = new File([blob], 'shapegraph.ttl');
             this.files = [file];
-            this.$emit('file-uploaded', this.files);
+            this.$emit('ttl-uploaded', this.files);
         })
         .catch(error => {
             console.error('There was a problem with the fetch operation:', error);
