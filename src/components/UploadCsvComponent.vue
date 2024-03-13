@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <h4 class="title is-4">Step 2: Upload Tables</h4>
+  <div class="box">
+    <p class="subtitle is-6">Step 2</p>
+    <p class="title is-4">Upload data</p>
     <div class="content">
       <p>To get started, you need a Table as comma-separated values file (.csv). You can upload your own or use the one we provide for testing.</p>
     </div>

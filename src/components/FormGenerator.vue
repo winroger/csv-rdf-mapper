@@ -1,10 +1,15 @@
 <template>
-  <div>
-    <h4 class="title is-4">Step 3: Match Shapegraph with Tables</h4>
-      <div v-for="(shape, index) in ApplicationProfile.getNodeShapes()" :key="shape.nodeId.value" class="content box">
+  <div class="box"> 
+    <p class="subtitle is-6">Step 3</p>
+    <p class="title is-4">Match schema with data</p>
+    <p class="content">
+      In this section you can check and adjust the mapping from ShapeProperties to CSV-Columns. Similar name labels will automatically be matched.
+  </p>
+      <div v-for="(shape, index) in ApplicationProfile.getNodeShapes()" :key="shape.nodeId.value" class="content">
+        <hr>
         <div class="columns">
         <div class="column is-half">
-          <legend><h5 class="title is-5">{{ index +1 }}. {{ shape.label.value }}</h5><p class="is-italic">{{ shape.nodeId.value }}</p></legend>
+          <legend><h5 class="title is-5">{{ index +1 }}. {{ shape.label.value }}</h5><p class="subtitle is-6 is-italic">{{ shape.nodeId.value }}</p></legend>
         </div>
         <div class="column is-half">
           <div class="select is-dark">

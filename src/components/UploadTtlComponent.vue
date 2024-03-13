@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <h4 class="title is-4">Step 1: Upload Shapegraph</h4>
+  <div class="box">
+    <p class="subtitle is-6">Step 1</p>
+    <p class="title is-4">Upload schema</p>
         <div class="content">
           <p>To get started, you need a Shapegraph as turtle file (.ttl). You can upload your own or use the one we provide for testing.</p>
         </div>

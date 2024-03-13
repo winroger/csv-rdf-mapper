@@ -1,5 +1,6 @@
 <template>
-  <h4 class="title is-4">3. Generate and Display RDF-Graph</h4>
+  <p class="subtitle is-6">Step 4</p>
+  <p class="title is-4">Generate and display graph</p>
   <p class="content">Once you are done with adjusting the mapping between your shapegraph and nodegraph, you can
     generate your RDF-Graph by clicking the button below.
   </p>
