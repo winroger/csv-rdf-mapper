@@ -63,6 +63,8 @@ import { InputData } from '@/inputdata';
         }        
       },
 
+      /// ADD THIS TO A TYPESCIPT FILE ///
+
       generateRDF() {
         const newTripleStore = graph();
         this.applicationProfile.getNodeShapes().forEach(shape => {
@@ -83,8 +85,18 @@ import { InputData } from '@/inputdata';
                   newTripleStore.add(subject, RDF_PREDICATE_TYPE, shape.nodeId)
                   if(prop.node) {
                     const targetNodesRaw = row[header_index]
-                    if (targetNodesRaw) {
-                      targetNodesRaw.forEach(targetNode => {
+                    
+                    // Try splitting the string, if splitting fails, put the original string into a list
+                    let targetNodesList = [];
+
+                    try {
+                      targetNodesList = targetNodesRaw.split(",");
+                    } catch (err) {
+                      targetNodesList = [targetNodesRaw];
+                    }
+
+                    if (targetNodesList) {
+                      targetNodesList.forEach(targetNode => {
                       newTripleStore.add(subject, prop.path, namedNode(prop.node.value + targetNode))
                       })
                     }
@@ -107,8 +119,9 @@ import { InputData } from '@/inputdata';
         this.rdfGraphGenerated = true;
       },
 
+      /// NEW FEATURE TO BE ADDED ///
+
       validateGraph() {
-        // To be added
       },
   }
 }
